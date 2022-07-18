@@ -35,12 +35,31 @@ body{
     display: flex;
     align-items: center;
     width: 50%;
-
     list-style: none;
     gap: 20px;
     justify-content: flex-end;
+
+}
+a{
+    text-decoration: none;
+    color: #212529;
+
+}
+a>span{
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #37268C;
+    transition: 0.5s;
 }
 
+a:hover span {
+    width: 100%;
+    height: 2px;
+    background: #37268C;
+    transition: 0.5s;
+
+  }
 
 
 .main-content{
@@ -148,7 +167,7 @@ body{
 .botao-carrinho{
     width: 147px;
     height: 16px;
-    background-color: white;
+    background-color:#F5F5F5;
     border: none;
     font-weight: 500;
     font-size: 14px;
@@ -158,6 +177,16 @@ body{
     text-align: start;
     margin-top: 15px;
     color: #212529;
+    transition: 0.5s;
+    text-align: center;
+    justify-content: center;
+    height: 25px;
+    
+}
+.botao-carrinho:hover{
+    background-color: #37268C;
+    color:#F5F5F5;
+    transition: 0.5s;
 }
 
 
@@ -194,6 +223,14 @@ body{
     background: #37268C;
     border: none;
     padding: 0;
+    transition: 0.5s;
+    
+}
+.pesquisa-botao:hover{
+    color: #37268C;
+    background: #FFFFFf;
+    transition: 0.5s;
+    
 }
 
 .carrinho-text{
@@ -208,16 +245,24 @@ body{
     justify-content: center;
     display: flex;
     margin: 0;
+
 }
 .carrinho{
     width: 347px;
     height: 214px;  
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background: #F5F5F5;
     overflow-y: auto;
+}
+.carrinho-vazio{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    margin: auto;
 }
 .carrinho-maintext{
     margin: 0;
@@ -232,4 +277,60 @@ body{
     font-size: 14px;
     line-height: 16px;
     color: #242424;
+}
+.lista-carrinho{
+    margin: 0;
+    padding: 0;
+}
+.item-carrinho{
+    display: flex;
+    width: 282px;
+    height: 92px;
+    flex-direction: row;
+    margin: 10px 10px;
+}
+.image-item-carrinho{
+    object-fit:cover;
+    width: 92px;
+    height: 92px;
+}
+.content-carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    margin-left: 18px;
+    width: 176px;
+    height: 92px;
+}
+.nome-carrinho{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+.preco-carrinho{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+}
+.remover{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    background: #F5F5F5;
+    transition: 0.5s;
+    color: #37268C;
+    text-align: center;
+    justify-content: center;
+    height: 25px;
+}
+.remover:hover{
+    background: #37268C;
+    color: #F5F5F5;
+    transition: 0.5s;
 }
