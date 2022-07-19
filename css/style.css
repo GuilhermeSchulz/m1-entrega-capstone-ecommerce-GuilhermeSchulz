@@ -105,8 +105,12 @@ a:hover span {
     border: 2px solid #F5F5F5;
     margin: 22px 0;
     display: flexbox;
+    transition: 0.5s;
     
-    
+  }
+  .item:hover{
+    border: 2px solid #37268C;
+    transition: 0.5s;
   }
 
 
@@ -196,6 +200,7 @@ a:hover span {
     align-items: flex-end;
     width: 28%;
     margin: 22px 0;
+    flex-wrap: wrap;
 }
 .pesquisa-campo{
     box-sizing: border-box;
@@ -333,4 +338,61 @@ a:hover span {
     background: #37268C;
     color: #F5F5F5;
     transition: 0.5s;
+}
+
+.preco-final{
+    width: 345px;
+    height: 126px;
+    background: #292929;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quantidade-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.total-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.quantidade-texto{
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.quantidade-numero{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total-texto{
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.total-valor{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
