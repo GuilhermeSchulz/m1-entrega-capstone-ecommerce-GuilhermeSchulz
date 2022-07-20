@@ -126,7 +126,7 @@ btnBusca.addEventListener("click", function(){
     let pesquisaUsuario = inputBusca.value
     let buscaResultado = busca(pesquisaUsuario)
     
-    produtosLista(buscaResultado)
+    produtosLista(buscaResultado, listaProdutos)
 
 })
 
