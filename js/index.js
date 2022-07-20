@@ -27,7 +27,7 @@ function produtosLista(listaDeProdutos, secao){
           }else if(secao == carrinho){
             let cardProduto = criarCardCarrinho(produto)
             secao.appendChild(cardProduto)
-            
+            let total = soma(carrinhoCompras)
             
            if(carrinhoCompras.length > 0){
                     
@@ -46,7 +46,7 @@ function produtosLista(listaDeProdutos, secao){
         
                 
                 h2Total.innerText = "Total:"
-                pTotal.innerText = `R$ ${produto.value}`.replace("." , ",")
+                pTotal.innerText = `R$ ${total}`.replace("." , ",")
                 lateral.appendChild(divPreco)
                 divPreco.appendChild(divQuant)
                 divQuant.appendChild(h2Quant)
@@ -57,7 +57,7 @@ function produtosLista(listaDeProdutos, secao){
         
             }else if(carrinhoCompras.length > 1){
                 pQuant.innerText = carrinhoCompras.length
-                let total = soma(carrinhoCompras)
+                
                 pTotal.innerText = `R$ ${total}`.replace("." , ",")
             }  
 
@@ -267,7 +267,6 @@ function soma(valor){
     let somatorio = 0
         for(let i = 0; i < valor.length; i++){
             somatorio += valor[i].value  
-
             
         }
         return somatorio
