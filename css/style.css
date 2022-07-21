@@ -256,7 +256,6 @@ a:hover span {
     width: 347px;
     height: 214px;  
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background: #F5F5F5;
